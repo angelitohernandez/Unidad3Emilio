@@ -1,0 +1,152 @@
+/* Colores reutilizables */
+:root {
+  --fondo: #f4f6f8;
+  --tarjeta: #ffffff;
+  --texto: #1c2430;
+  --gris: #5d6b7c;
+  --azul: #2a4a78;
+  --borde: #d5dee8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--texto);
+  background-color: var(--fondo);
+}
+
+/* Contenedor centrado de la página */
+.page {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.hero {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--azul);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: Georgia, serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.lead {
+  margin: 10px 0 0;
+  color: var(--gris);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Bloques blancos de lista y formulario */
+.panel {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  background-color: var(--tarjeta);
+}
+
+.panel-head {
+  margin-bottom: 16px;
+}
+
+.panel-head h2 {
+  font-size: 22px;
+}
+
+.lista {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid var(--borde);
+}
+
+.lista li:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.lista b {
+  display: block;
+  font-size: 15px;
+}
+
+.lista span {
+  display: block;
+  margin-top: 4px;
+  color: var(--gris);
+  font-size: 13px;
+}
+
+.edad {
+  color: var(--azul);
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--gris);
+  font-size: 13px;
+  font-weight: bold;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  font-size: 15px;
+  color: var(--texto);
+  background-color: var(--fondo);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--azul);
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: var(--azul);
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1f3a61;
+}

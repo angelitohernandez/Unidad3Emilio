@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Usuarios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <h1>Usuarios</h1>
+    </header>
+
+    <section class="panel">
+      <ul id="listaUsuarios" class="lista"></ul>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Nuevo usuario</h2>
+      </div>
+
+      <form id="formUsuario" class="formulario">
+        <label>
+          Nombre
+          <input id="nombre" type="text" placeholder="Elizabet" required>
+        </label>
+
+        <label>
+          Correo
+          <input id="correo" type="email" placeholder="eli@correo.com" required>
+        </label>
+
+        <label>
+          Edad
+          <input id="edad" type="number" min="1" placeholder="24" required>
+        </label>
+
+        <button type="submit">Guardar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
